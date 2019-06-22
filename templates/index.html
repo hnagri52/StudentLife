@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <title>Hackmeet</title>
+  
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="{{ url_for }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  
+  <link href={{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}} rel="stylesheet"/>
+   
+  <!-- Custom styles for this template -->
+  <link href={{url_for('static', filename='css/scrolling-nav.css')}} rel="stylesheet"/>
+
+  <link rel="icon" href={{url_for('static', filename='logo.png')}}>
+  
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <style>
+    body{
+      font-family: 'Roboto', sans-serif;
+      background: #FC466B;
+    }
+    /* background: linear-gradient(90deg, #9ebd13 0%, #008552 100%); */
+    .bg-gradient-primary{
+      background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+      /* background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); */
+    }
+
+    .bg-gradient-secondary{
+      background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    }
+
+    .bg-gradient-different{
+      background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    }
+
+    .centered {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 700px) and (min-width: 100px){
+      .centered {
+        top: 40% !important;
+      }
+
+      .thumbnail{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .font-size-lg{
+      font-size: 40px;
+    }
+
+    .font-size-md{
+      font-size: 28px;
+    }
+
+    .font-size-md{
+      font-size: 22px;
+    }
+
+    .img-fluid{
+      filter: opacity(50%);
+    }
+
+    .img-fluid-70{
+      filter: opacity(70%)
+    }
+
+    .input-text{
+      font-size: 22px;
+      padding: 17px;
+    }
+
+    .img-sm{
+      height: 100%;
+      width: 35px;
+    }
+
+    .divider{
+      display: block; 
+      height: 1px;
+      border: 0; 
+      border-top: 1px solid #ffffff;
+      margin: 1em 0; padding: 0; 
+    }
+    
+    .thumbnail{
+      height: 100%;
+      width: 60%;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">HackMeet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-white">
+    <div class="container text-center">
+      <img class="img-fluid thumbnail" src={{ url_for('static', filename='assets/sitting_group.jpg')}}/>
+      <div class="centered align-middle">
+      <!-- <img class="img-fluid" src="goup.jpg"/> -->
+        <h1 class="font-size-lg">Hackmeet</h1>
+        <p class="lead font-size-sm">A new an inovative way of connecting with people.</p>
+        <center>
+          <img src={{url_for('static', filename='assets/logo.png')}} class="thumbnail img-fluid-70 img-fluid-sm d-none d-sm-none d-md-block"/>
+        </center>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <hr class="divider"/>
+  </div>
+
+  <section id="about">
+    <div class="container text-white">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About - Our Story</h2>
+          <p class="lead">
+          WE NEED A STORY TO SELL OUR PRODUCT
+          </p>
+          <ul>
+            <li>Meet with other like minded people</li>
+            <li>Collaborate with others on various projects</li>
+            <li>Learn from others</li>
+            <li>Add something else here</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Features</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup" class="text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="text-center text-white">Sign Up</h1>
+          <br/>
+          <form method="POST" action="localhost:5000/signUp">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control input-text" placeholder="First name" required>
+              </div>
+            </div>
+            
+            <br/>
+            
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control input-text" placeholder="Last name" required>
+              </div>
+            </div>
+            
+            <br/>
+            
+            <div class="form-row">
+              <div class="col">
+                <input type="email" class="form-control input-text" placeholder="Email" required>
+              </div>
+            </div>
+            
+            <br/>
+            
+            <div class="form-row">
+              <div class="col">
+                <input type="password" class="form-control input-text" placeholder="Password" required>
+              </div>
+            </div>
+            
+            <br/>
+
+            <center>
+              <div class="form-row">
+                <div class="col">
+                  <button class="btn btn-primary btn-lg">Sign Up</button>
+                </div>
+              </div>
+            </center>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-light">
+    <div class="container">
+      <p class="m-0 text-center text-dark">Copyright &copy; Hackmeet 2019 <img src={{url_for('static', filename='assets/logo.png')}} class="img-sm"/></p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
