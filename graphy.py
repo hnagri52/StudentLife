@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
 
-im = image.imread('python logo.png')
-fig, ax = plt.subplots()
 fig= plt.figure(figsize=(23,10))
 data=languages.extract_languages()
 
