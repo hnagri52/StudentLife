@@ -1,0 +1,214 @@
+<div class="container feature">
+    <div class="row">
+      <h3 class="text-center mb-3">Upcoming Hackathons</h3>
+      <div class="event event-1200  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="HackMTY" href="https://hackmty.com/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/200/thumb/NL_Monty_Fundidora33.jpg?1557498954" alt="Nl monty fundidora33" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/200/thumb/logo_HackMTY_square.jpg?1557498954" alt="Logo hackmty square" /></div>
+
+        <h3 class="event-name" itemprop="name">HackMTY</h3>
+        <p class="event-date">Aug 24th - 25th</p>
+        <meta itemprop="startDate" content="2019-08-24"/>
+        <meta itemprop="endDate" content="2019-08-25"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Monterrey</span>,
+          <span itemprop="state">MX</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1209  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title=" Hackathon de Futuras Tecnologías " href="http://www.festivalfuturas.tech">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/209/thumb/Festival_Header_sq.jpg?1558024652" alt="Festival header sq" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/209/thumb/Festival_Stock1_sq-m.jpg?1558024652" alt="Festival stock1 sq m" /></div>
+
+        <h3 class="event-name" itemprop="name"> Hackathon de Futuras Tecnologías </h3>
+        <p class="event-date">Sep 7th - 8th</p>
+        <meta itemprop="startDate" content="2019-09-07"/>
+        <meta itemprop="endDate" content="2019-09-08"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Torreón</span>,
+          <span itemprop="state">Mexico</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1210  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="HackRice" href="https://hack.rice.edu/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/210/thumb/hack-ricebg.png?1559669215" alt="Hack ricebg" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/210/thumb/hackrice-logo.png?1559669215" alt="Hackrice logo" /></div>
+
+        <h3 class="event-name" itemprop="name">HackRice</h3>
+        <p class="event-date">Sep 20th - 21st</p>
+        <meta itemprop="startDate" content="2019-09-20"/>
+        <meta itemprop="endDate" content="2019-09-21"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Houston</span>,
+          <span itemprop="state">TX</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1202  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title=" ShellHacks" href="https://shellhacks.net/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/202/thumb/__MLH_Banner__300_x_300_.png?1557514832" alt="  mlh banner  300 x 300 " /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/202/thumb/__MLH_Icon__100_x_100_.png?1557514832" alt="  mlh icon  100 x 100 " /></div>
+
+        <h3 class="event-name" itemprop="name"> ShellHacks</h3>
+        <p class="event-date">Sep 20th - 22nd</p>
+        <meta itemprop="startDate" content="2019-09-20"/>
+        <meta itemprop="endDate" content="2019-09-22"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Miami</span>,
+          <span itemprop="state">FL</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1201  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="sunhacks" href="https://sunhacks.io/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/201/thumb/sunhacksBG.png?1557514618" alt="Sunhacksbg" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/201/thumb/sunhacks_icon_web__1_.jpg?1557514617" alt="Sunhacks icon web  1 " /></div>
+
+        <h3 class="event-name" itemprop="name">sunhacks</h3>
+        <p class="event-date">Sep 20th - 22nd</p>
+        <meta itemprop="startDate" content="2019-09-20"/>
+        <meta itemprop="endDate" content="2020-09-22"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Tempe</span>,
+          <span itemprop="state">AZ</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1203  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="GrizzHacks 4" href="https://grizzhacks.com/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/203/thumb/grizzbuilding.png?1557515135" alt="Grizzbuilding" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/203/thumb/grizzhacks4-logo.png?1557515135" alt="Grizzhacks4 logo" /></div>
+
+        <h3 class="event-name" itemprop="name">GrizzHacks 4</h3>
+        <p class="event-date">Sep 28th - 29th</p>
+        <meta itemprop="startDate" content="2019-09-28"/>
+        <meta itemprop="endDate" content="2019-09-29"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Rochester</span>,
+          <span itemprop="state">MI</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1204  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="HackUTD Fall 2019" href="http://www.hackutd.co/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/204/thumb/mlh-hackutd-VI-splash-bgcolorfix.png?1557516095" alt="Mlh hackutd vi splash bgcolorfix" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/204/thumb/mlh-hackutd-VI-splash-profpiccolorifx.png?1557516095" alt="Mlh hackutd vi splash profpiccolorifx" /></div>
+
+        <h3 class="event-name" itemprop="name">HackUTD Fall 2019</h3>
+        <p class="event-date">Nov 9th - 10th</p>
+        <meta itemprop="startDate" content="2019-11-09"/>
+        <meta itemprop="endDate" content="2019-11-10"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Richardson</span>,
+          <span itemprop="state">TX</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1205  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title=" BostonHacks" href="https://www.bostonhacks.io/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/205/thumb/BostonHacks_EventBackground_%282%29.jpg?1557516306" alt="Bostonhacks eventbackground %282%29" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/205/thumb/BostonHacks_EventLogo_%282%29.jpg?1557516306" alt="Bostonhacks eventlogo %282%29" /></div>
+
+        <h3 class="event-name" itemprop="name"> BostonHacks</h3>
+        <p class="event-date">Nov 16th - 17th</p>
+        <meta itemprop="startDate" content="2019-11-16"/>
+        <meta itemprop="endDate" content="2019-11-17"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Boston</span>,
+          <span itemprop="state">MA</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1207  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="Hack Arizona" href="http://hackarizona.org/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/207/thumb/Canyon_Background.png?1557516727" alt="Canyon background" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/207/thumb/HackArizona_logo-01.png?1557516727" alt="Hackarizona logo 01" /></div>
+
+        <h3 class="event-name" itemprop="name">Hack Arizona</h3>
+        <p class="event-date">Jan 17th - 19th</p>
+        <meta itemprop="startDate" content="2020-01-17"/>
+        <meta itemprop="endDate" content="2020-01-19"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Tucson</span>,
+          <span itemprop="state">AZ</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1208  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="Brickhack" href="https://brickhack.io/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/208/thumb/MLH_Background_%281%29.png?1557522014" alt="Mlh background %281%29" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/208/thumb/BH6_Logo.png?1557522013" alt="Bh6 logo" /></div>
+
+        <h3 class="event-name" itemprop="name">Brickhack</h3>
+        <p class="event-date">Feb 8th - 9th</p>
+        <meta itemprop="startDate" content="2020-02-08"/>
+        <meta itemprop="endDate" content="2020-02-09"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Rochester</span>,
+          <span itemprop="state">NY</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+<div class="event event-1198  col-lg-3 col-md-4 col-sm-6" itemscope itemtype="http://schema.org/Event">
+  <div class="event-wrapper">
+    <a target="_blank" class="event-link" itemprop="url" title="PickHacks" href="https://pickhacks.io/">
+      <div class="inner">
+
+        <div class="image-wrap"><img src="https://s3.amazonaws.com/assets.mlh.io/events/splashes/000/001/198/thumb/Havener_Center_2_%281%29.png?1557420669" alt="Havener center 2 %281%29" /></div>
+        <div class="event-logo"><img src="https://s3.amazonaws.com/assets.mlh.io/events/logos/000/001/198/thumb/PickHacks_Logo.png?1557420668" alt="Pickhacks logo" /></div>
+
+        <h3 class="event-name" itemprop="name">PickHacks</h3>
+        <p class="event-date">Apr 3rd - 5th</p>
+        <meta itemprop="startDate" content="2020-04-03"/>
+        <meta itemprop="endDate" content="2020-04-05"/>
+        <div class="event-location" itemprop="location" itemscope itemtype="http://schema.org/City">
+          <span itemprop="city">Rolla</span>,
+          <span itemprop="state">MO</span>
+        </div>
+      </div>
+</a>  </div>
+</div>
+
+    </div>
