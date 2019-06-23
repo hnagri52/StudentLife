@@ -79,4 +79,5 @@ class DBHelper(object):
         cur = con.cursor()
         cur.execute("SELECT first_name, last_name from user WHERE email='%s' and password='%s'" % (username, password)) 
         acc = cur.fetchone()
-        print(acc)
+        
+        return(acc)
