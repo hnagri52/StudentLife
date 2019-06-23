@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   
-  <title>StudentLife</title>
+  <title>StudyBuddy</title>
   
   <!-- Bootstrap core CSS -->
   <!-- <link href="{{ url_for }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -26,7 +26,7 @@
   <style>
     body{
       font-family: 'Roboto', sans-serif;
-      background: #dark;
+      background: #FC466B;
     }
     /* background: linear-gradient(90deg, #9ebd13 0%, #008552 100%); */
     .bg-gradient-primary{
@@ -108,38 +108,35 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger text-white" href="#page-top">StudentLife</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">StudyBuddy</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link text-white js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white js-scroll-trigger" href="#services">Features</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white js-scroll-trigger" href="#signup">Sign Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-outline-primary" href="/login">Log in</a>
+            <a class="nav-link js-scroll-trigger" href="#signup">Sign Up</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="text-white bg-light">
-    <div class="container text-center bg-light">
-      <img class="img-fluid thumbnail" src={{ url_for('static', filename='assets/sitting_group.jpg')}}/>
+  <header class="text-white">
+    <div class="container text-center">
+      <img class="img-fluid thumbnail" src="http://img3.wikia.nocookie.net/__cb20120517195549/community-sitcom/images/3/3c/CA_Dean_Peltons_shout_out_to_the_study_group.jpg"/>
       <div class="centered align-middle">
       <!-- <img class="img-fluid" src="goup.jpg"/> -->
-        <h1 class="font-size-lg text-dark">StudentLife</h1>
-        <p class="lead text-dark font-size-sm">A new and innovative way of connecting with LIKE people.</p>
+        <h1 class="font-size-lg">StudyBuddy</h1>
+        <p class="lead font-size-sm">A new an inovative way of connecting with people.</p>
         <center>
           <img src={{url_for('static', filename='assets/logo.png')}} class="thumbnail img-fluid-70 img-fluid-sm d-none d-sm-none d-md-block"/>
         </center>
@@ -152,18 +149,18 @@
   </div>
 
   <section id="about">
-    <div class="container text-black">
+    <div class="container text-white">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Why StudentLife</h2>
+          <h2>About StudyBuddy</h2>
           <p class="lead">
-          Ever want to do something fun with like-minded people? Are all your friends busy? StudentLife will find people LIKE you, and connect you together.
+          Study with your buddies
           </p>
           <ul>
-            <li>Find sports to play near you!</li>
-            <li>Collaborate with others on various projects</li>
-            <li>Learn from different study groups</li>
-            <li>Meet with like minded people</li>
+            <li>Create a study group for a specific course</li>
+            <li>Do better on your courses</li>
+            <li>Learn from others</li>
+            <li>Make new friends</li>
           </ul>
         </div>
       </div>
@@ -175,11 +172,6 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Features</h2>
-          <ul>
-            <li>Hackathon Group Formation</li>
-            <li>Study Groups Nearby</li>
-            <li>Pickup Sports Nearby</li>
-          </ul>
           <p class="lead"></p>
         </div>
       </div>
@@ -190,45 +182,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h1 class="text-center text-dark">Sign Up</h1>
+          <h1 class="text-center text-white">What course do you want to study</h1>
           <br/>
-          <form method="POST" action="/signUp">
+          <form method="POST" action="localhost:5000/signUp">
             <div class="form-row">
               <div class="col">
-                <input type="text" class="form-control input-text" name="fname" placeholder="First name" required>
+                <input type="text" class="form-control input-text" placeholder="Search Course" required>
               </div>
-            </div>
-            
-            <br/>
-            
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control input-text" name="lname" placeholder="Last name" required>
-              </div>
-            </div>
-            
-            <br/>
-            
-            <div class="form-row">
-              <div class="col">
-                <input type="email" class="form-control input-text" name="email" placeholder="Email" required>
-              </div>
-            </div>
-            
-            <br/>
-            
-            <div class="form-row">
-              <div class="col">
-                <input type="password" class="form-control input-text" name="password" placeholder="Password" required>
-              </div>
-            </div>
-            
-            <br/>
+            </div>         
+        
 
             <center>
               <div class="form-row">
                 <div class="col">
-                  <button class="btn btn-primary btn-lg">Sign Up</button>
+                  <button class="btn btn-primary btn-lg">Submit</button>
                 </div>
               </div>
             </center>
@@ -242,21 +209,12 @@
   <!-- Footer -->
   <footer class="py-3 bg-light">
     <div class="container">
-      <p class="m-0 text-center text-dark">Copyright &copy; StudentLife 2019 <img src={{url_for('static', filename='assets/logo.png')}} class="img-sm"/></p>
+      <p class="m-0 text-center text-dark">Copyright &copy; Hackmeet 2019 <img src={{url_for('static', filename='assets/logo.png')}} class="img-sm"/></p>
     </div>
     <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src={{ url_for('static', filename='jquery.min.js')}}></script>
-  <script src={{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}></script>
-
-  <!-- Plugin JavaScript -->
-  <script src={{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js')}}></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src={{ url_for('static', filename='js/scrolling-nav.js')}}></script>
-
+  
 </body>
 
 </html>
