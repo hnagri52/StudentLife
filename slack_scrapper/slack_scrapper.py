@@ -2,7 +2,7 @@ import time
 import json
 import requests
 # access token
-token = "xoxp-654666760339-668242515430-675748501366-d452873178577707d9fed00c7d8d2826"
+token = None # put your token key here
 
 
 def saveToFile(name, content):
