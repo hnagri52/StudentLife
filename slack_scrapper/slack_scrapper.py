@@ -2,7 +2,7 @@ import time
 import json
 import requests
 # access token
-token = "ADD_YOUR_TOKEN_HERE"
+token = "xoxp-654666760339-668242515430-675748501366-d452873178577707d9fed00c7d8d2826"
 
 
 def saveToFile(name, content):
@@ -29,10 +29,10 @@ def getMsgs():
                           for channel in channels if channel["name"] == "team-search"]
         slack_url = "https://slack.com/api/conversations.history?token=" + \
             token + "&channel=" + team_search_id[0]
-        channel_msgs = requests.get(slack_url).content.decode("utf-8")
+        channel_msgs = requests.get(slack_url).content.decode("utf-8").replace("messages", "data")
         # Saving the msgs to local msg.json file
         saveToFile(fname_msg, channel_msgs.encode('ascii', 'ignore').decode("utf-8"))
-        channel_msg = json.loads(readFile(fname_msg))["messages"]
+        channel_msg = json.loads(readFile(fname_msg))["data"]
         # making data safe to use for printing - there are some msgs that have unsafe characters that will stop the program
         for i in channel_msg[::-1]:
             i["text"] = i["text"].encode("ascii", "ignore")

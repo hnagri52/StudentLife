@@ -1,10 +1,11 @@
 import os
+import uuid
 import random
 import string
+import languages
 from db_helper import DBHelper
 from emailClient import sendMail
 from flask import Flask, render_template, request, jsonify, redirect, make_response, url_for, json
-import uuid
 
 app = Flask(__name__)
 app.secret_key = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(32))
@@ -49,7 +50,7 @@ def dashboard():
     token = request.cookies.get('token')
     if token:
         acc = DBHelper().get_name(token)
-        user = f"{acc[0].capitalize()} {acc[1].capitalize()}"
+        user = "%s %s" % (acc[0].capitalize(), acc[1].capitalize())
         return render_template("dashboard.html", user=user)
     else:
         return render_template("dashboard.html", user=None)
@@ -74,6 +75,15 @@ def login():
 
     elif request.method == "GET":
         return render_template("login.html", login_error=False)
+
+@app.route("/api")
+@app.route("/api/")
+def internalApi():
+    return render_template("api_view.html")
+
+@app.route("/api/demo")
+def returnDemo():
+    return jsonify(languages.extract_languages())
 
 @app.route("/login?activated")
 def login_activated(activated):
@@ -107,7 +117,7 @@ def hackathons():
     user = None
     if token:
         acc = DBHelper().get_name(token)
-        user = f"{acc[0].capitalize()} {acc[1].capitalize()}"
+        user = "%s %s" % (acc[0].capitalize(), acc[1].capitalize())
 
     # get the json file with hackathons data
     SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
@@ -123,7 +133,7 @@ def events():
     user = None
     if token:
         acc = DBHelper().get_name(token)
-        user = f"{acc[0].capitalize()} {acc[1].capitalize()}"
+        user = "%s %s" % (acc[0].capitalize(), acc[1].capitalize())
 
     # get query params
     event_name = request.args.get('event_name', default='EngHack', type = str)
