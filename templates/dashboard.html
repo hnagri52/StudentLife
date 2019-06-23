@@ -36,11 +36,13 @@
         class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark text-white border-bottom shadow-sm ">
         <h5 class="my-0 mr-md-auto font-weight-normal">Hackmeet</h5>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-white" href="#">Features</a>
-        </nav>
         {% if user is none %}
+                    <a class="p-2 text-white">Welcome Guest</a>
+        </nav>
             <a class="btn btn-outline-primary" href="/login">Log in</a>
         {% else %}
+                    <a class="p-2 text-white">Welcome {{ user }}</a>
+        </nav>
             <a class="btn btn-outline-primary" href="/logout">Log out</a>
         {% endif %}
     </div>
