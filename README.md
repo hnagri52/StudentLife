@@ -1,4 +1,4 @@
-# StudentLife-
+# StudentLife
 
 ## Inspiration
 When we came to this Hackathon, it was very hard finding a team. When we all came together, we decided that other students attending future hackathons should not have this trouble as well.
@@ -20,3 +20,5 @@ Learning to deal with JSON was new for one of the team members. It was the first
 
 ## What's next for StudentLife
 We are looking to create more than just 3 features. We want to implement finding people around you who want to meetup and get food, or even people to just hang out and connect with. Ultimately, we want to make this a multi purpose social app!
+
+
