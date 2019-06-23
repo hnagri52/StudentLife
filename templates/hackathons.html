@@ -60,7 +60,9 @@
         <div class="card-deck mb-3 text-center">
                 {% for hackathon in hackathons[::-1] %}
                 <div class="card-body shadow-sm mt-3 mr-3" style="width: 12rem;">
-                    <img src="{{ hackathon['logo'] }}" class="card-img-top" />
+                    <a href="/hackathons/event?event_name={{ hackathon['name'] }}">
+                        <img src="{{ hackathon['logo'] }}" class="card-img-top" />
+                    </a>
                     <hr />
                     <ul class="list-unstyled">
                         <h4 class="card-title pricing-card-title">{{hackathon['name']}}</h4>

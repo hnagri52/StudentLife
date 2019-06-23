@@ -117,5 +117,29 @@ def hackathons():
 
     return render_template("hackathons.html", hackathons=data, user=user)
 
+@app.route("/hackathons/event")
+def events():
+    token = request.cookies.get('token')
+    user = None
+    if token:
+        acc = DBHelper().get_name(token)
+        user = f"{acc[0].capitalize()} {acc[1].capitalize()}"
+
+    # get query params
+    event_name = request.args.get('event_name', default='EngHack', type = str)
+
+    # get the json file with hackathons data
+    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    json_url = os.path.join(SITE_ROOT, "static/data", "hackathons.json")
+    with open(json_url, encoding='utf-8') as fh:
+        data = json.load(fh)['data']
+        details = [d for d in data if event_name in d['name']]
+
+    if len(details) > 0:
+        details = details[0]
+
+    print(details)
+    return render_template("event.html", hackathon=details, user=user, event_name=event_name)    
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="5000", debug=True)
