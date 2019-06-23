@@ -3,7 +3,7 @@ import random
 import string
 from db_helper import DBHelper
 from emailClient import sendMail
-from flask import Flask, render_template, request, jsonify, redirect, make_response, url_for
+from flask import Flask, render_template, request, jsonify, redirect, make_response, url_for, json
 import uuid
 
 app = Flask(__name__)
@@ -81,7 +81,7 @@ def login_activated(activated):
 
 @app.route("/logout")
 def logout():
-    resp = make_response(render_template("dashboard.html", user=None))
+    resp = make_response(render_template("index.html", user=None))
     if request.cookies.get('token'):
         resp.set_cookie('token', '', expires=0)
 
@@ -100,6 +100,22 @@ def mailConfirmation():
     code = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))
     activationURL = "http://localhost:5000/validate/" + code
     return render_template("email-confirmation.html", url=activationURL)
+
+@app.route("/hackathons")
+def hackathons():
+    token = request.cookies.get('token')
+    user = None
+    if token:
+        acc = DBHelper().get_name(token)
+        user = f"{acc[0].capitalize()} {acc[1].capitalize()}"
+
+    # get the json file with hackathons data
+    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    json_url = os.path.join(SITE_ROOT, "static/data", "hackathons.json")
+    with open(json_url, encoding='utf-8') as fh:
+        data = json.load(fh)['data']
+
+    return render_template("hackathons.html", hackathons=data, user=user)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="5000", debug=True)
