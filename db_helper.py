@@ -1,4 +1,5 @@
 import sqlite3 as sql
+import uuid
 
 class DBHelper(object):
     # create database and tables: user, hackmeet
@@ -28,7 +29,8 @@ class DBHelper(object):
             "email" TEXT,
             "password"  TEXT,
             "active" BOOLEAN,
-            "code" TEXT
+            "code" TEXT,
+            "token" TEXT
             );
             """
             con.execute(create_hackmeet)
@@ -79,5 +81,22 @@ class DBHelper(object):
         cur = con.cursor()
         cur.execute("SELECT first_name, last_name from user WHERE email='%s' and password='%s'" % (username, password)) 
         acc = cur.fetchone()
+
+        if acc is not None:
+            token = str(uuid.uuid4())
+            con.execute("UPDATE user SET token = '%s' WHERE email = '%s'" % (token, username))
+            con.commit()
+        else:
+            token = None
+
+        return token
+
+    # get name based on token
+    def get_name(self, token):
+
+        con = sql.connect("studentlife.db")
+        cur = con.cursor()
+        cur.execute("SELECT first_name, last_name from user WHERE token='%s'" % (token))
+        acc = cur.fetchone()
         
-        return(acc)
+        return acc

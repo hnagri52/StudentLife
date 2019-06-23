@@ -46,8 +46,11 @@ def signUpForm():
 
 @app.route("/dashboard")
 def dashboard():
-    if request.cookies.get('token'):
-        return render_template("dashboard.html", user='bob')
+    token = request.cookies.get('token')
+    if token:
+        acc = DBHelper().get_name(token)
+        user = f"{acc[0].capitalize()} {acc[1].capitalize()}"
+        return render_template("dashboard.html", user=user)
     else:
         return render_template("dashboard.html", user=None)
 
@@ -57,12 +60,10 @@ def login():
         body = request.form
 
         # retrieve account info
-        acc = DBHelper().login(body["username"], body["password"])
+        token = DBHelper().login(body["username"], body["password"])
 
         # if login success
-        if acc is not None:
-            token = str(uuid.uuid4())
-
+        if token is not None:
             resp = make_response(redirect("http://localhost:5000/dashboard"))
             resp.set_cookie('token', token)
             return resp
